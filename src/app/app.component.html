@@ -1,0 +1,11 @@
+<!--1.Eliminamos todo lo que estaba en app.component.html y lo reemplazamos por el titulo que tenemos y agregamos el appcomponent por debajo-->
+<!--<h1>{{title}}</h1>-->
+<!--<app-heroes></app-heroes>-->
+<!--añadimos la plantilla de mensajes-->
+<h1>{{title}}</h1>
+<nav>
+  <a routerLink="/dashboard">Panel</a>
+  <a routerLink="/heroes">Agentes</a>
+</nav>
+<router-outlet></router-outlet>
+<app-messages></app-messages>
