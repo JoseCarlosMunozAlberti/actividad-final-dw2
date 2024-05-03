@@ -1,0 +1,13 @@
+<!--Detalles de campeones-->
+<div *ngIf="hero">
+  <img [src]="hero.image" alt="">
+  <h2>{{hero.name | uppercase}} Detalles</h2>
+  <div><span>id: </span>{{hero.id}}</div>
+  <div class="descripcion">
+    <label for="hero-descripcion">DESCRIPCION :</label>
+    <textarea for="hero-descripcion" [(ngModel)]="hero.description" placeholder="Hero descripcion"></textarea>
+  </div>
+  <!--Botones para volver y guardar-->
+  <button type="button" (click)="goBack()">Volver</button>
+  <button type="button" (click)="save()">Guardar</button>
+</div>
